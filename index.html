@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <section class="home">
+            <header>
+                <a href="#" class="logo">Sports</a>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Product</a></li>
+                    <li><a href="#">Service</a></li>
+                    <li><a href="#">Arrival</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </header>
+            <div class="content">
+                <div class="textBox">
+                    <h2>That's what<br><span>I like</span></h2>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                        Quod voluptatem rem, corporis magni adipisci sapiente cum 
+                        amet autem officiis voluptatibus nihil vitae consequatur 
+                        minus nesciunt tempore laudantium alias aliquam ducimus!
+                    </p>
+                    <a href="#">View All Products</a>
+                </div>
+                <div class="imgBox">
+                    <img src="img/3.png" alt="" class="sports">
+                </div>
+            </div>
+            <ul class="thumb">
+                <li><img src="img/1.png" onclick="imgSlider('img/1.png'); changeColor('#a18c02');"></li>
+                <li><img src="img/4.png" onclick="imgSlider('img/4.png'); changeColor('#2236b4');"></li>
+                <li><img src="img/3.png" onclick="imgSlider('img/3.png'); changeColor('#566a3b');"></li>
+            </ul>
+        </section>
+    </body>
+</html>
+
+<script>
+    function imgSlider(someThing){
+        document.querySelector('.sports').src = someThing;
+    }
+    function changeColor(color){
+        const sec = document.querySelector('.home');
+        sec.style.background = color;
+    }
+</script>
